@@ -44,7 +44,7 @@ def create
   
   private
     def investment_params
-      params.require(:investment).permit(:subject, :amount)
+      params.require(:investment).permit(:itemName, :purchaseAmount)
     end
   
 end
