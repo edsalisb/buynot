@@ -306,8 +306,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #53554e;
 }
 
 input,
@@ -317,6 +317,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-align: center;
 }
 
 a {
@@ -398,7 +399,6 @@ h6,
 .h5,
 .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
@@ -466,12 +466,19 @@ h6 .small {
 
 h1,
 .h1 {
-  font-size: 36px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 h2,
 .h2 {
-  font-size: 30px;
+  font-family: 'Droid Serif', serif;
+  color: #ffe25a;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 h3,
@@ -2253,7 +2260,7 @@ textarea.input-lg {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.428571429;
   text-align: center;
@@ -2349,8 +2356,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #5f943c;
+  border-color: #558238;
 }
 
 .btn-primary:hover,
@@ -2359,8 +2366,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: #558238;
+  border-color: #558238;
 }
 
 .btn-primary:active,

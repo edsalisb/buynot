@@ -1,0 +1,61 @@
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+</head>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<br/>
+		<h2 class="text-center">so you want to buy some stuff...</h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<br/><br/><br/><br/>
+		<h1 class="text-center">How much does this stuff cost?</h1>
+		<h1 class="text-center"><%= form_tag("/search", method: "get") do %></h1>
+		 <h1 class="text-center"><%= label_tag(:q, "$") %>
+		  <%= text_field_tag(:q) %></h1><br/>
+		  <p class="text-center"><%= submit_tag("submit", class: 'btn btn-primary') %></p>
+		<% end %></p><br/><br/>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<br/>
+		<h2 class="text-center">if you invested the money instead,<br/> 
+you could have:</h2><br/>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<h1 class="text-center">$xx</h1>
+		<h2 class="text-center">in 5 years</h2>
+	</div>
+	<div class="col-md-4">
+		<h1 class="text-center">$xx</h1>
+		<h2 class="text-center">in 10 years</h2>
+	</div>
+	<div class="col-md-4">
+		<h1 class="text-center">$xx</h1>
+		<h2 class="text-center">in 20 years</h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<br/><br/><br/><br/><br/><br/>
+		<h1 class="text-center">invest?</h1><br/>
+	</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 text-center">yes</div>
+  <div class="col-md-6 text-center">no</div>
+</div>
+<div class="container">
+
