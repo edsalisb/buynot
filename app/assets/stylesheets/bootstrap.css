@@ -307,7 +307,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #ffffff;
-  background-color: #53554e;
+  background-color: #353632;
 }
 
 input,
@@ -321,13 +321,13 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #5f943c;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #558238;
   text-decoration: underline;
 }
 
@@ -469,13 +469,14 @@ h1,
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: 400;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 h2,
 .h2 {
   font-family: 'Droid Serif', serif;
-  color: #ffe25a;
+  color: #ffe56e;
   font-size: 38px;
   font-weight: 400;
   line-height: 1.5em;
@@ -483,12 +484,17 @@ h2,
 
 h3,
 .h3 {
+  font-family: 'Droid Serif', serif;
+  color: #ffe56e;
   font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 h4,
 .h4 {
   font-size: 18px;
+  color: #ffffff;
 }
 
 h5,
@@ -503,6 +509,10 @@ h6,
 
 p {
   margin: 0 0 10px;
+}
+
+.disclaimer {
+	color: #a3a3a3;
 }
 
 .lead {
@@ -5917,15 +5927,15 @@ a.list-group-item.active:focus .list-group-item-text {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #000000;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
 
 .close:hover,
 .close:focus {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.5;
@@ -6015,6 +6025,7 @@ button.close {
   min-height: 16.428571429px;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
+  background-color: #222222;
 }
 
 .modal-header .close {
@@ -6029,6 +6040,7 @@ button.close {
 .modal-body {
   position: relative;
   padding: 20px;
+  background-color: #222222;
 }
 
 .modal-footer {

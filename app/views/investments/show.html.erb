@@ -1,4 +1,5 @@
 <div class="container">
+
 <div class="row">
 	<div class="col-md-12">
 		<br/>
@@ -9,16 +10,88 @@ you could have:</h2><br/>
 
 <div class="row">
 	<div class="col-md-4">
-		<h1 class="text-center">$<%= @investment.fiveYear %></h1>
+		<h1 class="text-center"><%= number_to_currency(@investment.fiveYear) %></h1>
 		<h2 class="text-center">in 5 years</h2>
 	</div>
 	<div class="col-md-4">
-		<h1 class="text-center">$<%= @investment.tenYear %></h1>
+		<h1 class="text-center"><%= number_to_currency(@investment.tenYear) %></h1>
 		<h2 class="text-center">in 10 years</h2>
 	</div>
 	<div class="col-md-4">
-		<h1 class="text-center">$<%= @investment.twentyYear %></h1>
+		<h1 class="text-center"><%= number_to_currency(@investment.twentyYear) %></h1>
 		<h2 class="text-center">in 20 years</h2>
 	</div>
 </div>
+
+<div class="row">
+	<div class="col-md-12">
+		<br/><br/><br/><br/><br/>
+		<h1 class="text-center">choose to invest?</h1><br/>
+	</div>
+</div>
+
+<div class="row">
+  <div class="col-md-3 col-md-offset-3">  
+	  
+	  <!-- Button trigger modal -->
+	  <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#yes">
+	    YES!
+	  </button>
+
+	  <!-- Modal -->
+	  <div class="modal fade" id="yes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h2 class="modal-title text-center" id="myModalLabel">congratulations!</h2>
+	        </div>
+	        <div class="modal-body">
+				<h1 class="text-center">You’re taking a step towards a financially secure future.</h1>
+				<h3 class="text-center">Here are some resources to help you get started:</h3><br/>
+				<h4 class="text-center">information on different investsment options</h4>
+				<p class="text-center"><a href="https://www.mint.com/waystoinvest/" target="_blank">https://www.mint.com/waystoinvest/</a></p><br/><br/>
+				<h4 class="text-center">information about Roth IRAs</h4>
+				<p class="text-center"><a href="http://www.rothira.com/" target="_blank">http://www.rothira.com/</a></p><br/><br/>
+				<h4 class="text-center">information about stocks for beginners</h4>
+				<p class="text-center"><a href="http://www.forbes.com/sites/mitchelltuchman/2013/09/17/best-investments-for-stock-market-beginners/" target="_blank">http://www.forbes.com/</a></p><br/><br/>
+	        </div>
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+
+  </div>
+  
+  <div class="col-md-3">  
+	  
+	  <!-- Button trigger modal -->
+	  <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#no">
+	    no
+	  </button>
+
+	  <!-- Modal -->
+	  <div class="modal fade" id="no" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h2 class="modal-title text-center" id="myModalLabel">bummer</h2>
+	        </div>
+	        <div class="modal-body">
+				<h1 class="text-center">Enjoy your stuff.</h1>
+	        </div>
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+	  
+  </div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<br/><br/><br/><br/><br/><br/>
+		<p class="disclaimer text-center">*All amounts assume an average 8% return compounded quarterly. They are subject to change depending on investment type.</p>
+	</div>
+</div>
+
 </div>
