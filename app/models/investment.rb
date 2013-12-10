@@ -1,23 +1,24 @@
 class Investment < ActiveRecord::Base
-attr_accessor :fiveYearInterest, :tenYearInterest, :twentyYearInterest,  :amountSaved,
-@amountSaved = 0
-	def initialize
+attr_accessor :fiveYearInterest, :tenYearInterest, :twentyYearInterest
+after_initialize :constant_rates
+
+	def constant_rates
+	
 		@fiveYearInterest = 1.4859473
 		@tenYearInterest = 2.2080396
 		@twentyYearInterest = 4.8754391
-		@amountSaved = 0
+		
 	end
 		
 	def fiveYear
-	@amountSaved = Investment.purchaseAmount * @fiveYearInterest
+	purchaseAmount * @fiveYearInterest
 	end
 
 	def tenYear
-	
-	@amountSaved = Investment.purchaseAmount * @tenYearInterest
+	purchaseAmount * @tenYearInterest
 	end
 
 	def twentyYear
-	@amountSaved = Investment.purchaseAmount * @twentyYearInterest
+	purchaseAmount * twentyYearInterest
 	end
 end
